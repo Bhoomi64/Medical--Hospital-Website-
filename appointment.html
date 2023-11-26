@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>booking</title>
+    <meta name="viewport" content="width=device-width,
+      initial-scale=1.0"/>
+    <link rel="stylesheet" href="appointment.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <header class = " bg-blue">
+        <nav class = "navbar bg-blue">
+            <div class = "container flex">
+                <a href = "index.html" class = "navbar-brand">
+                    <img src = "images/logo.png" alt = "site logo">
+                </a>
+                <button type = "button" class = "navbar-show-btn">
+                    <img src = "images/ham-menu-icon.png">
+                </button>
+
+                <div class = "navbar-collapse bg-white">
+                    <button type = "button" class = "navbar-hide-btn">
+                        <img src = "images/close-icon.png">
+                    </button>
+                    <ul class = "navbar-nav">
+                        <li class = "nav-item">
+                            <a href = "index.html" class = "nav-link">Home</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "aboutus.html" class = "nav-link">About</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "services.html" class = "nav-link">Service</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "doctor.html" class = "nav-link">Doctors</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "appointment.html" class = "nav-link">Appointment</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "blog.html" class = "nav-link">Blog</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "contact.html" class = "nav-link">Contact</a>
+                        </li>                                   <li class = "nav-item">
+                            <a href = "faq.html" class = "nav-link">FAQ</a>
+                        </li>
+                    </ul>
+                    <div class = "search-bar">
+                        <form>
+                          <button id="myButton">
+                          Login
+                      </button>
+                    </div>
+                </div> 
+            </div>
+        </nav>    
+    </header>
+    <section class="serviceSection">
+
+
+	<div id="myPopup" class="popup">
+		<div class="popup-content">
+
+            <form action="">
+                <div class="wrapper">
+                <h1 class="loginHeading">Login</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="username" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="password" required>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <div class="remember-forgot">
+                    <a href="#">forgot password?</a>
+                    <button type="submit" class="btn">Login</button>
+                </div>
+                <div class="register-link">
+                    <p>Don't have an account? <a href="#">Register</a></p>
+                </div>
+            </div>
+            </form> 
+			<button id="closePopup">
+				Close
+			</button>
+
+		</div>
+	</div>
+
+    <script src="popup.js"></script>
+    <div class="main-container">
+      <h1 class="form-title">Book Appointment</h1>
+      <form action="#">
+        <div class="main-user-info">
+          <div class="user-input-box">
+            <label for="fullName">Full Name</label>
+            <input type="text"
+                    id="fullName"
+                    name="fullName"
+                    placeholder="Enter Full Name"/>
+          </div>
+          <div class="user-input-box">
+            <label for="username">Last Name</label>
+            <input type="text"
+                    id="username"
+                    name="username"
+                    placeholder="Enter Last Name"/>
+          </div>
+          <div class="user-input-box">
+            <label for="email">Email</label>
+            <input type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter Email"/>
+          </div>
+          <div class="user-input-box">
+            <label for="phoneNumber">Phone Number</label>
+            <input type="text"
+                    id="phoneNumber"
+                    name="phoneNumber"
+                    placeholder="Enter Phone Number"/>
+          </div>
+          <div class="user-input-box">
+            <label for="password">Date of Appointment</label>
+            <input type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Enter Date"/>
+          </div>
+          <div class="user-input-box">
+            <label for="confirmPassword">Symptoms</label>
+            <input type="password"
+                    id="confirmPassword"
+                    name="confirmPassword"
+                    placeholder="Enter your Symptoms"/>
+          </div>
+        </div>
+        <div class="gender-details-box">
+          <span class="gender-title">Gender</span>
+          <div class="gender-category">
+            <input type="radio" name="gender" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="other">
+            <label for="other">Other</label>
+          </div>
+        </div>
+        <div class="form-submit-btn">
+          <input type="submit" value="Book Appointment">
+        </div>
+      </form>
+    </div>
+  </section>
+    <footer id = "footer" class = "footer text-center">
+        <div class = "container">
+            <div class = "footer-inner text-white py grid">
+                <div class = "footer-item">
+                    <h3 class = "footer-head">about us</h3>
+                    <div class = "icon">
+                        <img src = "images/logo.png">
+                    </div>
+                    <p class = "text text-md">Where Compassion Meets Care: Healing Lives, Every Step of the Way.</p>
+                    <address>
+                        Medic Clinic <br>
+                        Near Connaught Palace <br>
+                        New Delhi, Delhi <br>
+                        India
+                    </address>
+                </div>
+
+                <div class = "footer-item">
+                    <h3 class = "footer-head">tags</h3>
+                    <ul class = "tags-list flex">
+                        <li>medical care</li>
+                        <li>emergency</li>
+                        <li>therapy</li>
+                        <li>surgery</li>
+                        <li>medication</li>
+                        <li>nurse</li>
+                    </ul>
+                </div>
+
+                <div class = "footer-item">
+                    <h3 class = "footer-head">Quick Links</h3>
+                    <ul>
+                        <li><a href = "#" class = "text-white">Our Services</a></li>
+                        <li><a href = "#" class = "text-white">Our Blog</a></li>
+                        <li><a href = "#" class = "text-white">Testimonials</a></li>
+                        <li><a href = "#" class = "text-white">Appointment Schedule</a></li>
+                    </ul>
+                </div>
+
+                <div class = "footer-item">
+                    <h3 class = "footer-head">make an appointment</h3>
+                    <p class = "text text-md">Effortless Booking, Seamless Scheduling: Your Time, Your Control.</p>
+                    <ul class = "appointment-info">
+                        <li>8:00 AM - 11:00 AM</li>
+                        <li>2:00 PM - 05:00 PM</li>
+                        <li>8:00 PM - 11:00 PM</li>
+                        <li>
+                            <i class = "fas fa-envelope"></i>
+                            <span>revomedic@gmail.com</span>
+                        </li>
+                        <li>
+                            <i class = "fas fa-phone"></i>
+                            <span>+003 478 2834(00)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class = "footer-links">
+                <ul class = "flex">
+                    <li><a href = "#" class = "text-white flex"> <i class = "fab fa-facebook-f"></i></a></li>
+                    <li><a href = "#" class = "text-white flex"> <i class = "fab fa-twitter"></i></a></li>
+                    <li><a href = "#" class = "text-white flex"> <i class = "fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer> 
+  </body>
+</html>
